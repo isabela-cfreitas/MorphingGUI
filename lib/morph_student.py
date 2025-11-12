@@ -130,7 +130,7 @@ def gera_frame(A, B, pA, pB, triangles, alfa, beta):
                 w1, w2, w3 = _transf_baricentrica([x, y], tri_t)
                 if _check_bari(w1, w2, w3):
                     count += 1
-                    print(f"x: {x}, y: {y}, alfa: {alfa}, progresso: {100*count/n_pixels} %")
+                    #print(f"x: {x}, y: {y}, alfa: {alfa}, progresso: {100*count/n_pixels} %")
                     xA = w1*tri_a[0,0] + w2*tri_a[1,0] + w3*tri_a[2,0]
                     yA = w1*tri_a[0,1] + w2*tri_a[1,1] + w3*tri_a[2,1]
                     
@@ -145,5 +145,5 @@ def gera_frame(A, B, pA, pB, triangles, alfa, beta):
     
     # #v(p) = α(t) · v(p1) + (1 − α(t)) · v(p2)
     # I = (1-beta) * A * (X_A) + beta * B * (X_B)
-    print(N)
+    #print(N)
     return C
